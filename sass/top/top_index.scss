@@ -1,0 +1,156 @@
+@import "../variables.scss";
+@import "../global.scss";
+
+.wrapper {
+
+  &--banner__bottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+
+    &--banner__bottom {
+      padding-top: 70px;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+
+    &--banner__bottom {
+      padding-top: 40px;
+      justify-content: center;
+    }
+  }
+}
+
+@import "../svg.scss";
+@import "../social-link.scss";
+@import "../header-top.scss";
+@import "../header-middle.scss";
+@import "../messenger.scss";
+@import "../main-menu.scss";
+@import "../banner.scss";
+
+/*
+
+@import "../all_top_banner.scss";
+
+.banner__img {
+  background: url("../img/zemljanye-raboty-spb.jpg") no-repeat center;
+  background-size: cover;
+  height: 550px;
+}
+
+.banner__h1 {
+
+  &--index {
+    padding: 0 10px;
+    background-color: rgba(230, 165, 49, 0.5);
+  }
+}
+
+.banner__span {
+
+  &--index {
+    margin-top: 5px;
+    padding: 0 10px;
+    background-color: rgba(230, 165, 49, 0.5);
+  }
+}
+
+.banner__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.banner__button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+.banner__button-title {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: $fz-middle;
+  color: #000000;
+  font-weight: 400;
+  background: #f8ac00;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -29px;
+    border-right: 29px solid #f8ac00;
+    border-top: 29px solid transparent;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -29px;
+    border-right: 29px solid transparent;
+    border-top: 29px solid #f8ac00;
+  }
+}
+
+.banner__button-description {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+.banner__button-link {
+  text-decoration: none;
+  text-align: right;
+  color: #c78e01;
+  font-size: $small-text;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner__img {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__buttons {
+    width: 90%;
+  }
+
+  .banner__button-title {
+    padding-left: 15px;
+  }
+
+  .banner__button-description {
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+
+  .banner__button {
+    margin-bottom: 20px;
+  }
+}
+*/

@@ -142,22 +142,14 @@
 
   &--rent,
   &--excavator,
-  &--pogruzchik {
-    margin-left: 0;
-  }
-
-  &--samosval{
+  &--pogruzchik,
+  &--samosval {
     margin-left: 0;
   }
 }
-
 .banner__button-order {
   display: flex;
   flex-direction: row;
-
-  &--photo-banner {
-
-  }
 }
 
 .banner__btn-container {
@@ -302,7 +294,6 @@
   padding-bottom: 20px;
   background: #f0f0f0;
 }
-
 .banner__buttons {
   display: flex;
   flex-direction: row;
