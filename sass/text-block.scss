@@ -1,0 +1,19 @@
+.text-block {
+
+  &--margin-b {
+    margin-bottom: 20px;
+  }
+}
+
+.text-block__title {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.text-block__text {
+  font-size: 0.9em;
+}
+
+.text-block__span {
+  font-weight: bold;
+}

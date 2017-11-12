@@ -1,0 +1,16 @@
+.social-link {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+
+  &--footer {
+    justify-content: center;
+  }
+}
+
+.social-link__item {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  display: block;
+}

@@ -1,0 +1,24 @@
+.table-param {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.table-param__cel {
+  padding: 5px 0;
+  width: 70%;
+  border-bottom: 1px solid #747474;
+
+  &:first-child {
+    border-top: 1px solid #747474;
+  }
+}
+
+.table-param__cel-val {
+  text-align: center;
+  border-top: 1px dotted #747474;
+  border-bottom: 1px dotted #747474;
+
+  &:first-child {
+    border-top: 1px dotted #747474;
+  }
+}

@@ -1,0 +1,51 @@
+RewriteEngine on
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [NC,R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.mastergrunt.ru$ [NC]
+RewriteRule ^(.*)$ https://mastergrunt.ru/$1 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^\/$
+RewriteCond %{HTTPS_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} \/$
+RewriteCond %{HTTPS_HOST} ^www\.(.*)$
+RewriteRule ^(.*)\/$ https://%1/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} !\/$
+RewriteCond %{HTTPS_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} \/$
+RewriteCond %{HTTPS_HOST} ^([^www].*)$
+RewriteRule ^(.*)\/$ https://%1/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} /index.html
+RewriteCond %{QUERY_STRING} ^\z
+RewriteRule ^(.*)$ https://mastergrunt.ru/? [R=301,L]
+
+Header always append X-Frame-Options SAMEORIGIN
+Header always append X-Content-Type-Options: nosniff
+Header always append Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+Header always set X-Xss-Protection "1; mode=block"
+
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' userapi.com https://vk.com vk.com https://yastatic.net https://graph.facebook.com connect.facebook.net apis.google.com https://cdn.api.twitter.com *.yandex.ru mc.yandex.ru yandex.st; img-src 'self' data: mc.yandex.ru *.yandex.net yandex.st; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com yandex.st; child-src https://vk.com vk.com *.facebook.com www.youtube.com www.youtube-nocookie.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' *.yandex.ru; base-uri 'self'; frame-ancestors 'self';"
+
+Header set Referrer-Policy "no-referrer-when-downgrade"
+
+ErrorDocument 404 /404.php
+

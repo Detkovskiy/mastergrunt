@@ -1,0 +1,803 @@
+.banner__img {
+  background: url("../img/zemljanye-raboty-spb.jpg") no-repeat center;
+  background-size: cover;
+  height: 550px;
+}
+
+.banner__top {
+  height: 500px;
+  background-size: 75%;
+  background: #f0f0f0 no-repeat bottom;
+
+  &--rent {
+    background-image: url("../img/arenda-stroitelnoj-texniki-spb.html.svg");
+  }
+
+  &--samosval {
+    background-image: url("../img/banner-samosval.min.svg");
+  }
+
+  &--excavator {
+    background-image: url("../img/banner-excavators.min.svg");
+  }
+
+  &--pogruzchik {
+    background-image: url("../img/arenda-pogruzchika.svg");
+  }
+
+  &--mini-ex {
+    background-image: url("../img/mini-excavators.svg");
+  }
+
+  &--jamobyr {
+    background-image: url("../img/jamobyr-v-arendy-v-spb.svg");
+  }
+
+  &--avtokran {
+    background-image: url("../img/arenda-avtokrana-v-spb.svg");
+  }
+}
+
+.banner__bottom {
+  background: #fff;
+
+  &--rent {
+
+    &:before {
+      position: relative;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 30px;
+      background-color: #3d3d3d;
+    }
+  }
+}
+
+.banner__image-left {
+  position: relative;
+  top: 70px;
+  left: -50px;
+  width: 600px;
+  height: auto;
+  z-index: 0;
+}
+
+.banner__h1 {
+  color: #000;
+  text-transform: uppercase;
+
+  &--index {
+    padding: 0 10px;
+    background-color: rgba(230,165,49,0.5);
+  }
+
+  &--rent,
+  &--excavator,
+  &--pogruzchik {
+    text-align: left;
+    color: #000;
+  }
+}
+
+.banner__span {
+  margin-bottom: 310px;
+  color: #000;
+  text-transform: uppercase;
+
+  &--index {
+    margin-top: 5px;
+    padding: 0 10px;
+    background-color: rgba(230,165,49,0.5);
+  }
+
+  &--rent,
+  &--excavator {
+    margin-bottom: 0;
+    align-self: flex-end;
+    width: 35%;
+    text-align: right;
+    color: #000;
+  }
+
+  &--samosval {
+    margin-bottom: 0;
+    align-self: flex-end;
+    width: 45%;
+    text-align: right;
+    color: #000;
+  }
+
+  &--pogruzchik {
+    margin-bottom: 0;
+    align-self: flex-end;
+    text-align: right;
+    color: #000;
+  }
+}
+
+.banner__text {
+
+  &--rent,
+  &--excavator {
+    align-self: flex-start;
+    text-align: right;
+    width: 25%;
+    font-size: $small-text;
+  }
+
+  &--samosval {
+    margin-top: 59px;
+    text-align: left;
+    width: 30%;
+    font-size: 0.8em;
+  }
+}
+
+.banner__title {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--rent,
+  &--excavator,
+  &--pogruzchik {
+    margin-left: 0;
+  }
+
+  &--samosval{
+    margin-left: 0;
+  }
+}
+
+.banner__button-order {
+  display: flex;
+  flex-direction: row;
+
+  &--photo-banner {
+
+  }
+}
+
+.banner__btn-container {
+  position: relative;
+
+  padding: 15px 28px;
+  color: #000000;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--price {
+    padding: 17px 15px 10px 27px;
+  }
+
+  &--price:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 0;
+    transform: skewX(-45deg);
+  }
+
+  &--price:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 3px;
+    height: 40px;
+    top: 9px;
+    left: -4px;
+    background: #f8ac00;
+    transform: rotate(45deg);
+  }
+
+  &--photo-banner:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f8ac00;
+    z-index: 0;
+    transform: skewX(-20deg);
+  }
+
+  &--photo-banner:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 3px;
+    height: 40px;
+    top: 6px;
+    left: 0;
+    background: #fff;
+    transform: rotate(20deg);
+  }
+
+  &--btn {
+    padding-right: 40px;
+  }
+
+  &--btn:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 0;
+    transform: skewX(-45deg);
+    -webkit-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
+    box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
+  }
+
+  &--btn-photo-banner:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f8ac00;
+    z-index: 0;
+    transform: skewX(-20deg);
+    -webkit-box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);
+    -moz-box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);
+    box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);
+  }
+}
+
+.banner__btn-container:hover:before {
+  border: 1px solid #727272;
+  -webkit-box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.75);
+  box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.75);
+}
+
+.banner__btn-container:hover .banner__btn,
+.banner__btn-container:hover .banner__price {
+  color: #f8ac00;
+}
+
+.banner__btn-container--btn-photo-banner:hover .banner__btn,
+.banner__btn-container--photo-banner:hover .banner__price {
+  color: #fff;
+}
+
+.banner__btn {
+  position: relative;
+  z-index: 2;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.banner__price {
+  position: relative;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #000000;
+
+  &--photo-banner {
+    padding: 10px 0;
+  }
+}
+
+.banner__bottom {
+  padding-bottom: 20px;
+  background: #f0f0f0;
+}
+
+.banner__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.banner__button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+.banner__button-title {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: $fz-middle;
+  color: #000000;
+  font-weight: 400;
+  background: #f8ac00;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -29px;
+    border-right: 29px solid #f8ac00;
+    border-top: 29px solid transparent;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -29px;
+    border-right: 29px solid transparent;
+    border-top: 29px solid #f8ac00;
+  }
+}
+
+.banner__button-description {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+.banner__button-link {
+  text-decoration: none;
+  text-align: right;
+  color: #c78e01;
+  font-size: $small-text;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner__img {
+    min-height: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__top {
+    padding-top: 20px;
+
+    &--rent {
+      background-size: 1100px;
+    }
+
+    &--samosval {
+      background-size: 1100px;
+    }
+
+    &--excavator {
+      background-size: 1100px;
+    }
+
+    &--pogruzchik {
+      background-size: 1100px;
+    }
+
+    &--mini-ex {
+      background-size: 1100px;
+    }
+
+    &--jamobyr {
+      background-size: 1100px;
+    }
+
+    &--avtokran {
+      background-size: 1100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__image-left {
+    width: 270px;
+    left: -27px;
+    top: 24px;
+  }
+
+  .banner__title {
+
+    &--rent,
+    &--excavator {
+      margin-left: 40px;
+    }
+
+    &--pogruzchik {
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  .banner__h1 {
+    font-size: 2em;
+
+    &--samosval {
+      align-self: flex-end;
+    }
+
+    &--pogruzchik {
+      width: 83%;
+      text-align: center;
+    }
+  }
+
+  .banner__top {
+    height: 370px;
+
+    &--excavator {
+      height: 370px;
+    }
+  }
+
+  .banner__span {
+    margin-bottom: 308px;
+
+    &--rent,
+    &--excavator {
+      width: 60%;
+    }
+
+    &--pogruzchik {
+      align-self: center;
+    }
+  }
+
+  .banner__text {
+
+    &--rent,
+    &--excavator {
+      display: none;
+    }
+
+    &--samosval {
+      display: none;
+    }
+  }
+
+  .banner__btn-container {
+    padding: 10px 20px;
+  }
+
+  .banner__btn-container {
+
+    &--btn {
+      padding-right: 27px;
+    }
+  }
+
+  .banner__btn-container {
+
+    &--price {
+      padding: 12px 15px 10px;
+    }
+  }
+
+  .banner__btn-container {
+
+    &--price:after {
+      top: 5px;
+      left: -5px;
+    }
+  }
+
+  .banner__buttons {
+    width: 90%;
+  }
+
+  .banner__button-title {
+    padding-left: 15px;
+  }
+
+  .banner__button-description {
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+
+  .banner__button {
+    margin-bottom: 20px;
+  }
+
+  .banner__bottom {
+
+    &--rent {
+      &:before {
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__title {
+
+    &--rent,
+    &--excavator,
+    &--pogruzchik {
+      margin-left: 20px;
+    }
+
+    &--samosval {
+      margin-top: 30px;
+    }
+  }
+
+  .banner__top {
+
+    &--rent,
+    &--excavator {
+      background-size: 90%;
+    }
+  }
+
+  .banner__button-order {
+
+    &--photo-banner {
+      margin-bottom: 15px;
+      position: relative;
+      top: -38px;
+      font-size: 2em;
+    }
+  }
+
+  .banner__btn-container--photo-banner:after {
+    top: 12px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner__image-left {
+    width: 400px;
+    left: -20px;
+    top: 30px;
+  }
+
+  .banner__span {
+    &--rent,
+    &--excavator {
+      margin-bottom: 10px;
+    }
+  }
+
+  .banner__buttons {
+    width: 90%;
+  }
+
+  .banner__button-description {
+    padding-bottom: 10px;
+  }
+
+  .banner__button {
+    margin-bottom: 20px;
+  }
+
+  .banner__title {
+
+    &--rent,
+    &--excavator,
+    &--pogruzchik {
+      padding: 0 40px;
+    }
+  }
+
+  .banner__text {
+
+    &--rent,
+    &--excavator {
+      margin-left: 40px;
+      width: 30%;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__img {
+    background: url("../img/zemljanye-raboty-spb-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 568px) {
+  .banner__button {
+    width: 90%;
+  }
+
+  .banner__image-left {
+    display: none;
+  }
+
+  .banner__title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .banner__image-left {
+    display: none;
+  }
+
+  .banner__title {
+    margin-left: 0;
+    padding: 20px 40px;
+  }
+
+  .banner__h1 {
+    margin-bottom: 20px;
+
+    &--index {
+      background-color: rgba(230,165,49,0.3);
+    }
+
+    &--rent,
+    &--excavator,
+    &--pogruzchik {
+      font-size: 1.2em;
+    }
+
+    &--samosval {
+      font-size: 1.2em;
+      align-self: center;
+    }
+  }
+
+  .banner__span {
+    margin-bottom: 314px;
+    text-align: center;
+
+    &--index {
+      background-color: rgba(230,165,49,0.3);
+    }
+
+    &--rent,
+    &--excavator {
+      width: 100%;
+    }
+
+    &--samosval {
+      width: 100%;
+    }
+  }
+
+  .banner__text {
+
+    &--rent,
+    &--excavator {
+      display: none;
+    }
+
+    &--samosval {
+      display: none;
+    }
+  }
+
+  .banner__top {
+    height: 290px;
+
+    &--rent,
+    &--excavator {
+      height: 255px;
+      background-size: 86%;
+    }
+
+    &--samosval {
+      height: 230px;
+      background-size: 86%;
+    }
+  }
+
+  .banner__buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+  }
+
+  .banner__button {
+    width: 85%;
+  }
+
+  .banner__bottom {
+
+    &--rent {
+      &:before {
+        height: 10px;
+      }
+    }
+  }
+
+  .banner__button-order {
+
+    &--photo-banner {
+      margin-bottom: 15px;
+      top: -15px;
+      font-size: 1em;
+    }
+  }
+
+  .banner__btn-container--photo-banner:after {
+    top: 6px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner__img {
+    background: url("../img/zemljanye-raboty-spb-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner__image-left {
+    display: none;
+  }
+
+  .banner__title {
+    margin-top: 0;
+    margin-left: 0;
+
+    &--mobile {
+      padding-top: 20px;
+    }
+  }
+
+  .banner__btn-container--btn {
+    padding-right: 15px;
+  }
+
+  .banner__btn-container--price {
+    padding: 12px 10px 10px;
+  }
+
+  .banner__button {
+    width: 75%;
+  }
+
+  .banner__price {
+    padding: 10px 8px;
+
+    &--photo-banner {
+      padding: 10px 0;
+    }
+  }
+
+  .banner__btn-container--price:after {
+    height: 32px;
+  }
+
+  .banner__button-order {
+    font-size: 0.7em;
+  }
+
+  .banner__top {
+
+    &--rent,
+    &--excavator {
+      height: 230px;
+      background-size: 86%;
+    }
+
+    &--samosval {
+      height: 200px;
+      background-size: 86%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// Иконка Контакта
+.vk__border {
+  fill: transparent;
+}
+
+.vk__logo {
+  fill: #fff;
+}
+
+.social-link__item--vk:hover .vk__border {
+  fill: #fff;
+}
+
+.social-link__item--vk:hover .vk__logo {
+  fill: #4d75a3;
+}
+
+// Иконка Твитера
+.tw__border {
+  fill: transparent;
+}
+
+.tw__logo {
+  fill: #fff;
+}
+
+.social-link__item--tw:hover .tw__border {
+  fill: #fff;
+  border-radius: 50%;
+}
+
+.social-link__item--tw:hover .tw__logo {
+  fill: #1DA1F2;
+}

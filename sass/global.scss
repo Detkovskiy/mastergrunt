@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: $color-text-body;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Pepsi Cyr-Lat';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/pepsi.woff) format('woff');
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.618em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.618em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.318em;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.span-contact {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  background-color: rgba(248, 172, 0, 0.5);
+}
+
+.strong-block {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.picture__img {
+  width: 50%;
+}
+
+.list-price {
+  margin-top: 25px;
+}
+
+.list-price li {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  color: #c78e01;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+picture {
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+}
+
+.error-404 {
+  padding: 100px 20px;
+}

@@ -1,0 +1,21 @@
+.list-point {
+
+  &--margin-bottom {
+    margin-bottom: 20px;
+  }
+}
+
+.list-point li {
+  padding-left: 40px;
+  font-size: 0.9em;
+
+  &:before {
+    position: relative;
+    content: "• ";
+    left: -6px;
+    top: 2px;
+    font-size: 20px;
+    color: #3d3d3d;
+  }
+}
+

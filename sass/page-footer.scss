@@ -1,0 +1,287 @@
+.page-footer {
+  background: #141414;
+}
+
+.page-footer__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__main-left {
+  width: 40%;
+  margin-right: 9%;
+}
+
+.page-footer__main-right {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.page-footer__logo {
+  width: 100%;
+}
+
+.page-footer__logo-text {
+  color: #9e9e9e;
+}
+
+.page-footer__col {
+  padding: 0 2%;
+  width: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__title {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #fac012;
+}
+
+.page-footer__service-item {
+  padding: 5px 0;
+  color: #9e9e9e;
+  cursor: pointer;
+
+  &:hover {
+    color: #fac012;
+  }
+
+  &--contact {
+    margin-bottom: 20px;
+  }
+
+  &--sublist {
+    padding: 0 0 0 30px;
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__contact {
+  padding-left: 50px;
+
+  &--address {
+    background: url("../img/icon-adres.svg") no-repeat left;
+    background-size: 30px;
+  }
+
+  &--tel {
+    background: url("../img/icon-tel.svg") no-repeat left;
+    background-size: 30px;
+  }
+
+  &--email {
+    background: url("../img/icon-email.svg") no-repeat left;
+    background-size: 30px;
+  }
+
+  &> span {
+    display: block;
+  }
+}
+
+.page-footer__contact-address {
+  text-decoration: none;
+  color: #9e9e9e;
+  cursor: pointer;
+
+  &:hover {
+    color: #fac012;
+  }
+}
+
+.page-footer__icon {
+  width: 40px;
+  height: auto;
+}
+
+.page-footer__contact-link {
+  color: #9e9e9e;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #fac012;
+  }
+
+  &--sity {
+    &:hover {
+      color: #9e9e9e;
+    }
+  }
+
+  &--tel {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &--email {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.page-footer__service-item-link {
+  color: #9e9e9e;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #fac012;
+  }
+}
+
+.footer__bottom {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .page-footer__main {
+    flex-direction: column;
+  }
+
+  .page-footer__main-left {
+    margin-bottom: 40px;
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    width: 30%;
+  }
+
+  .page-footer__logo-text {
+    width: 60%;
+  }
+
+  .page-footer__main-right {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .page-footer__col {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-footer__main-left {
+    margin-bottom: 20px;
+  }
+
+  .page-footer__main-right {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .page-footer__title {
+    align-self: center;
+  }
+
+  .page-footer__logo {
+    width: 30%;
+  }
+
+  .page-footer__logo-text {
+    width: 60%;
+  }
+
+  .page-footer__col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+
+    &--tab {
+      display: none;
+    }
+  }
+
+  .page-footer__service-list {
+    display: flex;
+  }
+
+  .page-footer__service-item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .page-footer__contact {
+    padding-left: 0;
+    padding-top: 50px;
+    text-align: center;
+
+    &--address {
+      background-position-y: 5px;
+      background-position-x: center;
+    }
+
+    &--tel {
+      background-position-y: 5px;
+      background-position-x: center;
+    }
+
+    &--email {
+      background-position-y: 5px;
+      background-position-x: center;
+    }
+  }
+}
+
+@media (max-width: 667px) {
+  .page-footer__main-left {
+    flex-direction: column;
+  }
+
+  .page-footer__logo-text {
+    width: 100%;
+  }
+
+  .page-footer__logo {
+    width: 50%;
+    align-self: center;
+  }
+
+  .page-footer__col {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .page-footer__service-list {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .page-footer__service-item {
+    margin-right: 0;
+    align-self: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .page-footer__logo {
+    width: 85%;
+  }
+
+  .page-footer__title {
+    align-self: center;
+  }
+
+  .footer__bottom {
+    margin-top: 20px;
+    order: 3;
+  }
+}
+

@@ -1,0 +1,92 @@
+.table-price {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  border-collapse: collapse;
+  color: #686461;
+}
+caption {
+  padding: 10px;
+  color: white;
+  background: #f8ac00;
+  font-size: 1.2em;
+  text-align: left;
+}
+th {
+  border-bottom: 3px solid #dec387;
+  padding: 10px;
+  text-align: left;
+}
+td {
+  padding: 10px;
+}
+.table-price tr:nth-child(odd) {
+  background: white;
+}
+.table-price tr:nth-child(even) {
+  background: rgba(255, 189, 29, 0.10);
+}
+
+.table-description {
+  margin-bottom: 40px;
+  padding: 20px 20px 20px;
+  font-size: 0.87em;
+  border-radius: 5px;
+  background: rgba(255, 189, 29, 0.1);
+
+  &--yellow {
+    background: rgba(255, 189, 29, 0.10);
+  }
+}
+
+.table-description-title {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 1.2em;
+  color: #000;
+}
+
+.table-description__list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.table-description li {
+  margin-left: 15px;
+
+  &:before {
+    position: relative;
+    content: "• ";
+    left: -6px;
+    top: 2px;
+    font-size: 20px;
+    color: #3d3d3d;
+  }
+}
+
+.col-8 {
+  width: 12.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden {
+    display: table-row;
+  }
+}
+
+@media (max-width: 768px) {
+  caption {
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 414px) {
+  caption {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,7 @@
+Sitemap: https://mastergrunt.ru/sitemap.xml
+
+User-Agent: *
+Host: https://mastergrunt.ru
+Disallow: /jamobur-v-arendu-v-spb.html
+Disallow: /arenda-mini-jekskavatora-spb.html
+Disallow: /404.php

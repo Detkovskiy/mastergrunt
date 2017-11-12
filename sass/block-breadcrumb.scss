@@ -1,0 +1,109 @@
+.block-breadcrumb {
+  padding: 10px 0;
+  background: #3d3d3d;
+
+  &--car {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+}
+
+.breadcrumb {
+  white-space: nowrap;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  line-height: 26px;
+  margin: 0 9px 0 -10px;
+  padding: 0 20px;
+  position: relative;
+
+  &:first-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+.breadcrumb-item::before,
+.breadcrumb-item::after {
+  border-right: 1px solid #d6d6d6;
+  content: '';
+  display: block;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  transform: skewX(45deg);
+}
+
+.breadcrumb-item::after {
+  bottom: 0;
+  top: auto;
+  transform: skewX(-45deg);
+}
+
+.breadcrumb-item:last-of-type::before,
+.breadcrumb-item:last-of-type::after {
+  display: none;
+}
+
+.breadcrumb-link {
+  position: relative;
+  font-size: 1em;
+  letter-spacing: -1px;
+  text-decoration: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.breadcrumb-item:hover .breadcrumb-link {
+  color: #f8ac00;
+}
+
+.breadcrumb-item:last-child:hover .breadcrumb-link {
+  color: hsl(0, 0%, 85%);
+}
+
+.breadcrumb-item:nth-of-type(4) a { color: hsl(0, 0%, 90%); }
+.breadcrumb-item:nth-of-type(3) span { color: hsl(0, 0%, 85%); }
+.breadcrumb-item:nth-of-type(3) a { color: hsl(0, 0%, 75%); }
+.breadcrumb-item:nth-of-type(2) a { color: hsl(0, 0%, 65%); }
+.breadcrumb-item:nth-of-type(1) a { color: hsl(0, 0%, 55%); }
+
+.breadcrumb-item--car:nth-of-type(4) a { color: #f8ac00; }
+.breadcrumb-item--car:nth-of-type(3) span { color: #747474; }
+.breadcrumb-item--car:nth-of-type(3) a { color: #747474; }
+.breadcrumb-item--car:nth-of-type(2) a { color: #747474; }
+.breadcrumb-item--car:nth-of-type(1) a { color: #747474; }
+
+@media (max-width: 414px) {
+  .breadcrumb-link {
+    font-size: 0.8em;
+  }
+
+  .breadcrumb-item {
+    margin: 0 4px 0 -8px;
+    padding: 0 10px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .block-breadcrumb {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .block-breadcrumb {
+    padding: 6px 0;
+  }
+
+    .breadcrumb-link {
+    font-size: 0.7em;
+  }
+}

@@ -1,0 +1,153 @@
+.order {
+  position: relative;
+}
+
+.name-feedback {
+  padding: 5px 5px 5px 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  outline-color: #f8ac00;
+}
+
+.tel-feedback {
+  padding: 5px 5px 5px 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  outline-color: #f8ac00;
+}
+
+.list-order {
+  position: relative;
+  margin-right: 15px;
+  padding: 5px 8px;
+  width: 190px;
+  border: 1px solid #d1d1d1;
+  box-shadow: none;
+  background: #fff url("../img/arow.svg") no-repeat 94% 56%;
+  background-size: 8%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #3d3d3d;
+  outline-color: #f8ac00;
+}
+
+.order__btn {
+  padding: 10px 30px;
+  background-color: #f8ac00;
+  border: none;
+  border-bottom: 5px solid #da9701;
+  outline: none;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover {
+    background-color: #3d3d3d;
+    border-bottom: 5px solid #f8ac00;
+  }
+
+  &--main {
+    margin-top: 20px;
+  }
+
+  &--index {
+    margin-top: 10px;
+  }
+}
+
+::-webkit-input-placeholder {color: #3d3d3d;}
+::-moz-placeholder          {color: #3d3d3d;}
+:-moz-placeholder           {color: #3d3d3d;}
+:-ms-input-placeholder      {color: #3d3d3d;}
+
+.label-name-feedback {
+  position: absolute;
+  left: 16px;
+  top: -20px;
+
+  color: #f8ac00;
+  font-size: 0.87em;
+  display: none;
+}
+
+.label-tel-feedback {
+  position: absolute;
+  left: 215px;
+  top: -20px;
+
+  color: #f8ac00;
+  font-size: 0.87em;
+  display: none;
+}
+
+.name-feedback:focus + .label-name-feedback,
+.tel-feedback:focus + .label-tel-feedback {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .name-feedback--order,
+  .tel-feedback--order {
+    padding: 10px 0 10px 15px;
+    width: 30%;
+  }
+
+  .order__btn {
+    margin-top: 20px;
+  }
+
+  .name-feedback:focus + .label-name-feedback {
+    display: block;
+    left: 54px;
+    top: -25px;
+  }
+
+  .tel-feedback:focus + .label-tel-feedback {
+    display: block;
+    left: 282px;
+    top: -25px;
+  }
+}
+
+@media (max-width: 720px) {
+  .tel-feedback:focus + .label-tel-feedback {
+    display: block;
+    left: 273px;
+    top: -25px;
+  }
+}
+
+@media (max-width: 414px) {
+  .order {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .list-order {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    background-size: 5%;
+  }
+
+  .name-feedback,
+  .tel-feedback {
+    margin-right: 0;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .name-feedback:focus + .label-name-feedback,
+  .tel-feedback:focus + .label-tel-feedback {
+    display: none;
+  }
+}
+

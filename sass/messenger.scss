@@ -1,0 +1,19 @@
+.social-messenger {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-messenger__link {
+  margin-right: 5px;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-messenger__img {
+  width: 30px;
+}
+
