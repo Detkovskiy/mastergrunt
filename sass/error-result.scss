@@ -7,37 +7,33 @@
   background: #FFBABA url("../img/error.svg") no-repeat 15px;
   background-size: 20px;
 
-  &--banner {
-    position: absolute;
-    content: "";
-    display: block;
-    top: -42px;
-    left: 31px;
-    width: 87%;
-    background: #FFBABA url("../img/error.svg") no-repeat 15px;
-    background-size: 20px;
-  }
-
-  &--order {
-    position: absolute;
-    content: "";
-    display: block;
-    top: -50px;
-    left: 0;
-    width: 77%;
-    background: #FFBABA url("../img/error.svg") no-repeat 15px;
-    background-size: 20px;
-  }
-
+  &--banner,
+  &--order,
   &--work {
     position: absolute;
     content: "";
     display: block;
+    background: #FFBABA url("../img/error.svg") no-repeat 15px;
+    background-size: 20px;
+  }
+
+  &--banner {
+    top: -42px;
+    left: 31px;
+    width: 87%;
+  }
+
+  &--order {
+    top: -50px;
+    left: 0;
+    width: 77%;
+
+  }
+
+  &--work {
     top: -50px;
     left: 79px;
     width: 77%;
-    background: #FFBABA url("../img/error.svg") no-repeat 15px;
-    background-size: 20px;
   }
 }
 
@@ -46,22 +42,10 @@
   line-height: 40px;
   color: #D8000C;
 
-  &--banner {
-    padding-left: 50px;
+  &--banner,
+  &--order,
+  &--work {
     line-height: 42px;
-    color: #D8000C;
-  }
-
-  &--order {
-    padding-left: 50px;
-    line-height: 42px;
-    color: #D8000C;
-  }
-
-  &--work{
-    padding-left: 50px;
-    line-height: 42px;
-    color: #D8000C;
   }
 }
 
@@ -163,7 +147,6 @@
   #error-result {
     &--order {
       top: -46px;
-      left: 21px;
       width: 89%;
     }
 
@@ -173,7 +156,6 @@
     }
 
     &--work {
-      left: 20px;
       width: 88%;
     }
   }
@@ -181,37 +163,30 @@
 
 @media (max-width: 320px) {
   #error-result {
-    &--order {
-      position: absolute;
-      content: "";
-      display: block;
-      top: -45px;
-      left: 21px;
-      width: 87%;
-      background: #FFBABA url("../img/error.svg") no-repeat 15px;
-      background-size: 20px;
-    }
-
-    &--banner {
-      position: absolute;
-      content: "";
-      display: block;
-      top: -42px;
-      left: 16px;
-      width: 90%;
-      background: #FFBABA url("../img/error.svg") no-repeat 15px;
-      background-size: 20px;
-    }
-
+    &--order,
+    &--banner,
     &--work {
       position: absolute;
       content: "";
       display: block;
-      top: -46px;
-      left: 20px;
-      width: 85%;
       background: #FFBABA url("../img/error.svg") no-repeat 15px;
       background-size: 20px;
+    }
+
+    &--order {
+      top: -45px;
+      width: 87%;
+    }
+
+    &--banner {
+      top: -42px;
+      left: 16px;
+      width: 90%;
+    }
+
+    &--work {
+      top: -46px;
+      width: 85%;
     }
   }
 }

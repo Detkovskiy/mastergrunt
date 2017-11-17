@@ -18,71 +18,11 @@
   margin-bottom: 40px;
   width: 40%;
 
-  &--personal:before {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: #febf10 url("../img/personal.svg") no-repeat center;
-    background-size: 45px;
-    z-index: 5;
-  }
-
-  &--spec-car:before {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: #febf10 url("../img/spec-car.svg") no-repeat center;
-    background-size: 60px;
-    z-index: 5;
-  }
-
-  &--cycle:before {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: #febf10 url("../img/cycle.svg") no-repeat center;
-    background-size: 59px;
-    z-index: 5;
-  }
-
-  &--doc:before {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: #febf10 url("../img/doc.svg") no-repeat center;
-    background-size: 60px;
-    z-index: 5;
-  }
-
-  &--tools:before {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background: #febf10 url("../img/tools.svg") no-repeat center;
-    background-size: 50px;
-    z-index: 5;
-  }
-
+  &--personal:before,
+  &--spec-car:before,
+  &--cycle:before,
+  &--doc:before,
+  &--tools:before,
   &--exp:before {
     position: absolute;
     top: 0;
@@ -91,9 +31,37 @@
     display: block;
     width: 80px;
     height: 80px;
+    z-index: 5;
+  }
+
+  &--personal:before {
+    background: #febf10 url("../img/personal.svg") no-repeat center;
+    background-size: 45px;
+  }
+
+  &--spec-car:before {
+    background: #febf10 url("../img/spec-car.svg") no-repeat center;
+    background-size: 60px;
+  }
+
+  &--cycle:before {
+    background: #febf10 url("../img/cycle.svg") no-repeat center;
+    background-size: 59px;
+  }
+
+  &--doc:before {
+    background: #febf10 url("../img/doc.svg") no-repeat center;
+    background-size: 60px;
+  }
+
+  &--tools:before {
+    background: #febf10 url("../img/tools.svg") no-repeat center;
+    background-size: 50px;
+  }
+
+  &--exp:before {
     background: #febf10 url("../img/exp.svg") no-repeat center;
     background-size: 60px;
-    z-index: 5;
   }
 
   &:after {
@@ -141,38 +109,7 @@
     padding-left: 55px;
     margin-bottom: 10px;
 
-    &--personal:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 25px;
-    }
-
-    &--spec-car:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 30px;
-    }
-
-    &--cycle:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 30px;
-    }
-
-    &--doc:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 30px;
-    }
-
+    &--personal:before,
     &--tools:before {
       top: 0;
       left: -10px;
@@ -181,6 +118,9 @@
       background-size: 25px;
     }
 
+    &--spec-car:before,
+    &--cycle:before,
+    &--doc:before,
     &--exp:before {
       top: 0;
       left: -10px;
@@ -208,41 +148,16 @@
 
 @media (max-width: 320px) {
   .advantages__item {
-    padding-left: 55px;
-    margin-bottom: 10px;
 
-    &--personal:before {
-      top: 0;
-      left: -10px;
+    &:after {
+      top: -4px;
+      left: -16px;
       width: 40px;
       height: 40px;
-      background-size: 25px;
+      background: #f0f0f0;
     }
 
-    &--spec-car:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 30px;
-    }
-
-    &--cycle:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 30px;
-    }
-
-    &--doc:before {
-      top: 0;
-      left: -10px;
-      width: 40px;
-      height: 40px;
-      background-size: 30px;
-    }
-
+    &--personal:before,
     &--tools:before {
       top: 0;
       left: -10px;
@@ -251,20 +166,15 @@
       background-size: 25px;
     }
 
+    &--spec-car:before,
+    &--cycle:before,
+    &--doc:before,
     &--exp:before {
       top: 0;
       left: -10px;
       width: 40px;
       height: 40px;
       background-size: 30px;
-    }
-
-    &:after {
-      top: -4px;
-      left: -16px;
-      width: 40px;
-      height: 40px;
-      background: #f0f0f0;
     }
   }
 

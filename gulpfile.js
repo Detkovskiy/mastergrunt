@@ -129,7 +129,8 @@ gulp.task("copy", function() {
     "images/**",
     "*.txt",
     "*.xml",
-    "*.html"
+    "*.html",
+    "*.php"
   ], {
     base: "."
   })

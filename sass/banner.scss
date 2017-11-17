@@ -42,7 +42,6 @@
   background: #fff;
 
   &--rent {
-
     &:before {
       position: relative;
       content: "";
@@ -92,27 +91,22 @@
   }
 
   &--rent,
-  &--excavator {
-    margin-bottom: 0;
-    align-self: flex-end;
-    width: 35%;
-    text-align: right;
-    color: #000;
-  }
-
-  &--samosval {
-    margin-bottom: 0;
-    align-self: flex-end;
-    width: 45%;
-    text-align: right;
-    color: #000;
-  }
-
+  &--excavator,
+  &--samosval,
   &--pogruzchik {
     margin-bottom: 0;
     align-self: flex-end;
     text-align: right;
     color: #000;
+  }
+
+  &--rent,
+  &--excavator {
+    width: 35%;
+  }
+
+  &--samosval {
+    width: 45%;
   }
 }
 
@@ -130,7 +124,7 @@
     margin-top: 59px;
     text-align: left;
     width: 30%;
-    font-size: 0.8em;
+    font-size: $small-text;
   }
 }
 
@@ -166,6 +160,7 @@
     padding: 17px 15px 10px 27px;
   }
 
+  &--photo-banner:before,
   &--price:before {
     position: absolute;
     display: block;
@@ -174,42 +169,36 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
     z-index: 0;
+  }
+
+  &--price:before {
+    background: #fff;
     transform: skewX(-45deg);
   }
 
-  &--price:after {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 3px;
-    height: 40px;
-    top: 9px;
-    left: -4px;
-    background: #f8ac00;
-    transform: rotate(45deg);
-  }
-
   &--photo-banner:before {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: #f8ac00;
-    z-index: 0;
     transform: skewX(-20deg);
   }
 
+  &--price:after,
   &--photo-banner:after {
     position: absolute;
     display: block;
     content: '';
     width: 3px;
     height: 40px;
+  }
+
+  &--price:after {
+    top: 9px;
+    left: -4px;
+    background: #f8ac00;
+    transform: rotate(45deg);
+  }
+
+  &--photo-banner:after {
     top: 6px;
     left: 0;
     background: #fff;
@@ -220,22 +209,7 @@
     padding-right: 40px;
   }
 
-  &--btn:before {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 0;
-    transform: skewX(-45deg);
-    -webkit-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
-    box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
-  }
-
+  &--btn:before,
   &--btn-photo-banner:before {
     position: absolute;
     display: block;
@@ -244,8 +218,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #f8ac00;
     z-index: 0;
+  }
+
+  &--btn:before {
+    background: #fff;
+    transform: skewX(-45deg);
+    -webkit-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
+    box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
+  }
+
+  &--btn-photo-banner:before {
+    background: #f8ac00;
     transform: skewX(-20deg);
     -webkit-box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);
     -moz-box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);
@@ -318,20 +303,20 @@
   font-weight: 400;
   background: #f8ac00;
 
-  &:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: -29px;
-    border-right: 29px solid #f8ac00;
-    border-top: 29px solid transparent;
-  }
-
+  &:before,
   &:after {
     position: absolute;
     content: "";
     top: 0;
     right: -29px;
+  }
+
+  &:before {
+    border-right: 29px solid #f8ac00;
+    border-top: 29px solid transparent;
+  }
+
+  &:after {
     border-right: 29px solid transparent;
     border-top: 29px solid #f8ac00;
   }
@@ -367,30 +352,12 @@
   .banner__top {
     padding-top: 20px;
 
-    &--rent {
-      background-size: 1100px;
-    }
-
-    &--samosval {
-      background-size: 1100px;
-    }
-
-    &--excavator {
-      background-size: 1100px;
-    }
-
-    &--pogruzchik {
-      background-size: 1100px;
-    }
-
-    &--mini-ex {
-      background-size: 1100px;
-    }
-
-    &--jamobyr {
-      background-size: 1100px;
-    }
-
+    &--rent,
+    &--samosval,
+    &--excavator,
+    &--pogruzchik,
+    &--mini-ex,
+    &--jamobyr,
     &--avtokran {
       background-size: 1100px;
     }
@@ -452,12 +419,8 @@
   }
 
   .banner__text {
-
     &--rent,
-    &--excavator {
-      display: none;
-    }
-
+    &--excavator,
     &--samosval {
       display: none;
     }
@@ -468,21 +431,18 @@
   }
 
   .banner__btn-container {
-
     &--btn {
       padding-right: 27px;
     }
   }
 
   .banner__btn-container {
-
     &--price {
       padding: 12px 15px 10px;
     }
   }
 
   .banner__btn-container {
-
     &--price:after {
       top: 5px;
       left: -5px;
@@ -507,7 +467,6 @@
   }
 
   .banner__bottom {
-
     &--rent {
       &:before {
         height: 20px;
@@ -531,7 +490,6 @@
   }
 
   .banner__top {
-
     &--rent,
     &--excavator {
       background-size: 90%;
@@ -640,12 +598,12 @@
 
     &--rent,
     &--excavator,
-    &--pogruzchik {
+    &--pogruzchik,
+    &--samosval {
       font-size: 1.2em;
     }
 
     &--samosval {
-      font-size: 1.2em;
       align-self: center;
     }
   }
@@ -659,22 +617,15 @@
     }
 
     &--rent,
-    &--excavator {
-      width: 100%;
-    }
-
+    &--excavator,
     &--samosval {
       width: 100%;
     }
   }
 
   .banner__text {
-
     &--rent,
-    &--excavator {
-      display: none;
-    }
-
+    &--excavator,
     &--samosval {
       display: none;
     }
@@ -684,14 +635,14 @@
     height: 290px;
 
     &--rent,
-    &--excavator {
+    &--excavator,
+    &--samosval {
       height: 255px;
       background-size: 86%;
     }
 
     &--samosval {
       height: 230px;
-      background-size: 86%;
     }
   }
 
@@ -779,16 +730,15 @@
   }
 
   .banner__top {
-
     &--rent,
-    &--excavator {
+    &--excavator,
+    &--samosval {
       height: 230px;
       background-size: 86%;
     }
 
     &--samosval {
       height: 200px;
-      background-size: 86%;
     }
   }
 }

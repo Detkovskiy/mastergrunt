@@ -20,7 +20,6 @@
   align-items: center;
 }
 
-
 .banner__button-order {
   display: flex;
   flex-direction: row;
@@ -28,7 +27,6 @@
 
 .banner__btn-container {
   position: relative;
-
   padding: 15px 28px;
   color: #000000;
 
@@ -40,7 +38,10 @@
     padding: 17px 15px 10px 27px;
   }
 
-  &--price:before {
+  &--price:before,
+  &--photo-banner:before,
+  &--btn:before,
+  &--btn-photo-banner:before {
     position: absolute;
     display: block;
     content: '';
@@ -48,17 +49,24 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
     z-index: 0;
+  }
+
+  &--price:before {
+    background: #fff;
     transform: skewX(-45deg);
   }
 
-  &--price:after {
+  &--price:after,
+  &--photo-banner:after {
     position: absolute;
     display: block;
     content: '';
     width: 3px;
     height: 40px;
+  }
+
+  &--price:after {
     top: 9px;
     left: -4px;
     background: #f8ac00;
@@ -66,24 +74,11 @@
   }
 
   &--photo-banner:before {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: #f8ac00;
-    z-index: 0;
     transform: skewX(-20deg);
   }
 
   &--photo-banner:after {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 3px;
-    height: 40px;
     top: 6px;
     left: 0;
     background: #fff;
@@ -95,15 +90,7 @@
   }
 
   &--btn:before {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: #fff;
-    z-index: 0;
     transform: skewX(-45deg);
     -webkit-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -6px 0 17px -14px rgba(0,0,0,0.75);
@@ -111,15 +98,7 @@
   }
 
   &--btn-photo-banner:before {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: #f8ac00;
-    z-index: 0;
     transform: skewX(-20deg);
     -webkit-box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);
     -moz-box-shadow: inset -6px 0 15px -6px rgba(43, 43, 43, 0.75);

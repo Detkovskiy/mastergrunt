@@ -42,13 +42,9 @@
     flex-direction: column;
   }
 
-  .info-block__img-left {
-    margin-right: 0;
-    width: 60%;
-  }
-
+  .info-block__img-left,
   .info-block__img-right {
-    margin-left: 0;
+    margin-right: 0;
     width: 60%;
   }
 }
@@ -60,10 +56,7 @@
 }
 
 @media (max-width: 414px) {
-  .info-block__img-left {
-    width: 85%;
-  }
-
+  .info-block__img-left,
   .info-block__img-right {
     width: 85%;
   }
